@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --dicbook-bg: #f8fafc;
+  --dicbook-surface: #ffffff;
+  --dicbook-surface-muted: #f1f5f9;
+  --dicbook-border: #e2e8f0;
+  --dicbook-ink: #0f172a;
+  --dicbook-ink-muted: #475569;
+  --dicbook-brand: #2563eb;
+  --dicbook-brand-hover: #1d4ed8;
+  --dicbook-brand-soft: #eff6ff;
+  --dicbook-brand-ink: #1e40af;
+}
+
+.dark {
+  --dicbook-bg: #0b1120;
+  --dicbook-surface: #111827;
+  --dicbook-surface-muted: #1e293b;
+  --dicbook-border: #1f2937;
+  --dicbook-ink: #f8fafc;
+  --dicbook-ink-muted: #94a3b8;
+  --dicbook-brand: #3b82f6;
+  --dicbook-brand-hover: #2563eb;
+  --dicbook-brand-soft: rgba(59, 130, 246, 0.14);
+  --dicbook-brand-ink: #93c5fd;
+}
+
+@layer base {
+  html {
+    background-color: var(--dicbook-bg);
+    color: var(--dicbook-ink);
+  }
+
+  body {
+    background-color: var(--dicbook-bg);
+    color: var(--dicbook-ink);
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), system-ui, -apple-system, sans-serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

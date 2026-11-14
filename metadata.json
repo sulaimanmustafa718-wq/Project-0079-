@@ -1,0 +1,6 @@
+{
+  "name": "DICBOOK",
+  "description": "DICBOOK — A welcoming social network connecting neighborhood people and local businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
